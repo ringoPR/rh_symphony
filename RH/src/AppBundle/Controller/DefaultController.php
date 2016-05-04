@@ -9,12 +9,12 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/home", name="connexion")
      */
     public function indexAction(Request $request)
     {
 
         // replace this example code with whatever you need
-        return $this->render('login.html.twig');
+        return $this->render('home.html.twig');
     }
 }
