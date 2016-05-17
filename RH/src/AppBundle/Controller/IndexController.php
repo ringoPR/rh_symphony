@@ -2,79 +2,114 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\salarie;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 class IndexController extends Controller
 {
-    /**
-     * @Route("/", name="indexpage")
-     */
+  
+     /**
+     * @Route("/" ,name="indexPage")
+     */ 
     public function indexAction(Request $request)
     {
-
-        // replace this example code with whatever you need
         return $this->render('index.html.twig');
     }
 
     /**
-     * @Route("/{id}")
+     * @Route("/1")
      */
-    public function showAction($id)
+    public function marketAction(Request $request)
     {
-    	if($id==1){
-        	// replace this example code with whatever you need
-        	return $this->render('market.html.twig');
-        }
-        if($id==2){
-        	// replace this example code with whatever you need
-        	return $this->render('module1.html.twig');
-        }
-        if($id==3){
-        	// replace this example code with whatever you need
-        	return $this->render('module2.html.twig');
-        }
-        if($id==4){
-        	// replace this example code with whatever you need
-        	return $this->render('module3.html.twig');
-        }
-        if($id==5){
-        	// replace this example code with whatever you need
-        	return $this->render('module4.html.twig');
-        }
-        if($id==6){
-        	// replace this example code with whatever you need
-        	return $this->render('module5.html.twig');
-        }
-        if($id==7){
-        	// replace this example code with whatever you need
-        	return $this->render('module6.html.twig');
-        }
-       	if($id=="login"){
-        	return $this->render('login.html.twig');
-        }
-        if($id=="help"){
-        	// replace this example code with whatever you need
-        	return $this->render('help.html.twig');
-        }
-        if($id=="settings"){
-        	// replace this example code with whatever you need
-        	return $this->render('settings.html.twig');
-        }
-       // if($id="home"){
-       //     return $this->redirectToRoute('connexion');
-       // }
-        if($id=="contact"){
-        	 return $this->render('contact.html.twig');
-        }
-        else{
-        	 return $this->render('index.html.twig');	
-        }
-    	
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('market.html.twig',array('nom' => $nom ));
+    }
+    /**
+     * @Route("/2")
+     */
+    public function Module1Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module1.html.twig',array('nom' => $nom ));
+    }
+    /**
+     * @Route("/3")
+     */
+    public function Module2Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module2.html.twig',array('nom' => $nom ));
     }
 
-     
+    /**
+     * @Route("/4")
+     */
+    public function Module3Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module3.html.twig',array('nom' => $nom ));
+    }
+    /**
+     * @Route("/5")
+     */
+    public function Module4Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module4.html.twig',array('nom' => $nom ));
+    }
+    /**
+     * @Route("/6")
+     */
+    public function Module5Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module5.html.twig',array('nom' => $nom ));
+    } 
+    /**
+     * @Route("/7")
+     */
+    public function Module6Action(Request $request)
+    {
+        $sess = $request->getSession();
+        $nom = $sess->get("nom");
+         return $this->render('salarie/module6.html.twig',array('nom' => $nom ));
+    } 
+    /**
+     * @Route("/login")
+     */
+    public function loginAction()
+    {
+         return $this->redirectToRoute('login');
+    } 
+    /**
+     * @Route("/help")
+     */
+    public function helpAction()
+    {
+         return $this->render('help.html.twig');
+    }
+    /**
+     * @Route("/contact")
+     */
+    public function contactAction()
+    {
+        
+        return $this->render('contact.html.twig');
+    } 
+    
+
+    
+    
 }
+
 
 
