@@ -27,39 +27,72 @@
           <li><a href="{{"/4"}}">Gestion des recrutements</a></li>
           <li><a href="{{"/5"}}">Forum de discussions interne</a></li>
           <li><a href="{{"/6"}}">Génération de statistiques</a></li>
-          <li><a href="{{"/7"}}">Générateur de fiche de paie</a></li>
+          <li><a href="{{"/7"}}">Annuaire</a></li>
         </ul>
       </li>
     </ul>
   </nav>
 
-<div class="content-wrapper">
+  <div class="content-wrapper">
       <div class="container-fluid">
 
         <div class="row">
           <div class="col-md-12">
           
-           
-             <h2 class="page-title">CARREFOUR MARKET</h2>
+            <h2 class="page-title">Génération de statistiques</h2>
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-7">
                 <div class="panel panel-default">
+                  <div class="panel-heading">Le proportion femme/homme </div>
                   <div class="panel-body">
-                    <div class="content-format">
-                      <h2>   <code>Notre entreprise</code></h2>
-                      <br/>
-                      <p><strong>Carrefour Market</strong>, ou <strong>Market</strong> est une enseigne française de supermarchés, apparue en octobre 2007, appartenant au groupe Carrefour, disposant d'environ un millier de points de vente en France.</p>
-<p>Depuis 2011, le groupe <strong>Carrefour</strong> a décidé de déployer cette enseigne <strong>Carrefour Market</strong> à travers le monde pour l'ensemble de ses supermarchés dont la surface oscille principalement entre <abbr title="surface">1 000 et 5 000 m2.</abbr></p>
-<p>Selon l'ancien PDG de<strong> Carrefour</strong>, <em>José Luis Duran</em>,<small> « C'est d'abord un projet commercial pour attirer le client, gagner en notoriété, améliorer notre performance commerciale et augmenter le chiffre d'affaires au mètre carré. Dans tous les autres pays, le passage à l'enseigne Carrefour nous a conduit à augmenter le chiffre d'affaires et gagner des parts de marché. Nous avons aussi constaté une amélioration de la satisfaction du client ».</small> </p>
+                    <div class="chart">
+                      <canvas id="lineChart" height="310" width="600"></canvas>
+                    </div>
+                    <div id="legendDiv"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Le taux de personnel handicape</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="chart chart-doughnut">
+                          <canvas id="chart-area" width="500" height="280" />
+                        </div>
+                      </div>
 
-
-                     
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          
+
+            
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">L’evolution des effectifs au cours de l’annee </div>
+                  <div class="panel-body">
+                    <div class="chart">
+                      <canvas id="chart-bar" height="400" width="1200"></canvas>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+      </div>
     </div>
   </div>
 

@@ -1,0 +1,196 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="brand clearfix">
+    <a href="" class="logo"><img src="bundles/bootstrap/img/logo.jpg" class="img-responsive" alt=""></a>
+    <span class="menu-btn"><i class="fa fa-bars"></i></span>
+    <ul class="ts-profile-nav">
+      <li class="ts-account">
+        <a href="/{{nom}}"><img src="bundles/bootstrap/img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> {{nom}} <i class="fa fa-angle-down hidden-side"></i></a>
+        <ul>
+          <li><a href="#">Mon compte</a></li>
+          <li><a href="#">Modifie</a></li>
+          <li><a href="#">Sortir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="ts-main-content">
+  <nav class="ts-sidebar">
+    <ul class="ts-sidebar-menu">
+      <li class="ts-label">Acceuil</li>
+      <li><a href="{{"/1"}}"><i class="fa fa-dashboard"></i> Description de l'entreprise</a></li>
+      <li class="open"><a href="{{"/"}}"><i class="fa fa-desktop"></i> Modules disponibles</a>
+        <ul>
+          <li class="open"><a href="{{"/2"}}">Gestion des gongés</a></li>
+          <li><a href="{{"/3"}}">Gestion des formations</a></li>
+          <li><a href="{{"/4"}}">Gestion des recrutements</a></li>
+          <li><a href="{{"/5"}}">Forum de discussions interne</a></li>
+          <li><a href="{{"/6"}}">Génération de statistiques</a></li>
+          <li><a href="{{"/7"}}">Annuaire</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+      <div class="content-wrapper">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2 class="page-title">Dashboard</h2>
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-body bk-primary text-light">
+                        <div class="stat-panel text-center">
+                          <div class="stat-panel-number h1 ">3</div>
+                          <div class="stat-panel-title text-uppercase">Formation A Traiter</div>
+                        </div>
+                      </div>
+                      <a href="#" class="block-anchor panel-footer">Full Detail <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-body bk-success text-light">
+                        <div class="stat-panel text-center">
+                          <div class="stat-panel-number h1 ">18</div>
+                          <div class="stat-panel-title text-uppercase">Condidatures réçu</div>
+                        </div>
+                      </div>
+                      <a href="#" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-body bk-info text-light">
+                        <div class="stat-panel text-center">
+                          <div class="stat-panel-number h1 ">6</div>
+                          <div class="stat-panel-title text-uppercase">Salaries en Gongés</div>
+                        </div>
+                      </div>
+                      <a href="#" class="block-anchor panel-footer text-center">See All &nbsp; <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="panel panel-default">
+                      <div class="panel-body bk-warning text-light">
+                        <div class="stat-panel text-center">
+                          <div class="stat-panel-number h1 ">10</div>
+                          <div class="stat-panel-title text-uppercase">Offres disponibles</div>
+                        </div>
+                      </div>
+                      <a href="#" class="block-anchor panel-footer text-center">See All &nbsp; <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Récrutement Récent</div>
+                  <div class="panel-body">
+                    <div class="alert alert-dismissible alert-success">
+                      <button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i></button>
+                      <strong>Une Nouvelle Condidature!</strong> pour l'offre caissier polyvalent paris 13ème <a href="#" class="alert-link"> à traiter le dossier</a>.
+                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nom</th>
+                          <th>Prenom</th>
+                          <th>TYPE DE CONTRAT</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>CDD</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>CDD</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>Apprentissage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Statistiques</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="panel-body">
+                          <h4>Chiffre d'affaire (+30%)</h4>
+                
+                <div class="progress progress-striped active">
+                  <div class="progress-bar" style="width: 45%"></div>
+                </div>
+                
+                <h4>Offre de Stage(35%)</h4>
+                
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+                </div>
+                 <h4>Offre de CDD(70%)</h4>
+                
+                  <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+                </div>
+                 <h4>Offre de CDI(20%)</h4>
+                
+                <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-danger" style="width: 20%"></div>
+                </div>
+                 <h4>Offre de Contrat d'apprentissage (30%)</h4>
+                
+                  <div class="progress progress-striped">
+                  <div class="progress-bar progress-bar-info" style="width: 30%"></div>
+                </div>
+                 <h4>Percentage de femme  (66%)</h4>
+                
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" style="width: 66%"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+        
+       
+
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

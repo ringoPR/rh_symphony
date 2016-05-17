@@ -5,50 +5,35 @@
     <span class="menu-btn"><i class="fa fa-bars"></i></span>
     <ul class="ts-profile-nav">
       <li><a href="{{"/help"}}">Help</a></li>
-      <li><a href="{{"/settings"}}">Settings</a></li>
+      
       <li class="ts-account"><a href="{{"/login"}}">login</a></li>
     </ul>
 </div>
 
-<div class="ts-main-content">
-  <nav class="ts-sidebar">
-    <ul class="ts-sidebar-menu">
-      <li class="ts-label">Main</li>
-      <li><a href="{{"/1"}}"><i class="fa fa-dashboard"></i> Description de l'entreprise</a></li>
-      <li class="open"><a href="{{"/"}}"><i class="fa fa-desktop"></i> Modules disponibles</a>
-        <ul>
-          <li class="open"><a href="{{"/2"}}">Gestion des gongés</a></li>
-          <li><a href="{{"/3"}}">Gestion des formations</a></li>
-          <li><a href="{{"/4"}}">Gestion des recrutements</a></li>
-          <li><a href="{{"/5"}}">Forum de discussions interne</a></li>
-          <li><a href="{{"/6"}}">Génération de statistiques</a></li>
-          <li><a href="{{"/7"}}">Générateur de fiche de paie</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+
+
 
 <div class="content-wrapper">
       <div class="container-fluid">
 
         <div class="row">
           <div class="col-md-12">
-          
-           
+
+
              <h2 class="page-title">CARREFOUR MARKET</h2>
             <div class="row">
               <div class="col-md-12">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <div class="content-format">
-                      <h2>Espace de travaile pour la gestion des ressources humaines   <code>carrefour market</code></h2>
+                      <h2>Espace de travaile pour la gestion des ressources humaines <br>  <code>carrefour market</code></h2>
                       <br/>
                       <p><strong>Carrefour Market</strong>, ou <strong>Market</strong> est une enseigne française de supermarchés, apparue en octobre 2007, appartenant au groupe Carrefour, disposant d'environ un millier de points de vente en France.</p>
 <p>Depuis 2011, le groupe <strong>Carrefour</strong> a décidé de déployer cette enseigne <strong>Carrefour Market</strong> à travers le monde pour l'ensemble de ses supermarchés dont la surface oscille principalement entre <abbr title="surface">1 000 et 5 000 m2.</abbr></p>
 <p>Selon l'ancien PDG de<strong> Carrefour</strong>, <em>José Luis Duran</em>,<small> « C'est d'abord un projet commercial pour attirer le client, gagner en notoriété, améliorer notre performance commerciale et augmenter le chiffre d'affaires au mètre carré. Dans tous les autres pays, le passage à l'enseigne Carrefour nous a conduit à augmenter le chiffre d'affaires et gagner des parts de marché. Nous avons aussi constaté une amélioration de la satisfaction du client ».</small> </p>
 
 
-                     
+
                     </div>
                   </div>
                 </div>
@@ -61,13 +46,23 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">Gestion des congnes</div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    
+                    <p class="text-primary">
+Ce module contient : un calendrier, un compte du nombre de jours restants par salarie et 
+deux types d’utilisateurs, les salaries et les validateurs.
+Les salaries pourront accèder a ce module et prendre connaissance du nombre de joursde conges qu’il leur reste. 
+Ils peuvent alors poser leurs conges sur le calendrier et connaitre les cong ́es valides par leur superieur hierarchique.<br>
+Le validateur peut utiliser ce module comme un salarie normal (et c’est son superieur
+hierarchique qui validera ses conges) et de plus peut voir tous les conges poses par les
+salaries dont il a la charge. Il peut alors valider ou non les conges.
+Les regles pour les conges sont les suivantes:<br>
+  —> Chaque mois travaille ouvre le droit a 2,5 jours ouvrables. Regarder le site du
+ministere pour savoir comment calculer ces conges si un salarie commence son travail
+au milieu du mois ainsi que sur la definition du jour ouvrable.<br>
+  —> S’il y a pendant les conges un jour ferie habituellement chome, la duree des conges
+est prolongee d’un jour.
+
+                    </p>
                   </div>
                 </div>
               </div>
@@ -75,13 +70,20 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">Gestion des formations</div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+  
+ <p class="text-primary">
+                    Ce module contient : un catalogue proposant des formations et un compte du nombre de jours de formations disponibles. 
+                    Deux types d’utilisateurs : les salaries et les validateurs.<br>
+       -> Le salarie pourra acceder a ce module et prendre connaissance du nombre de jours
+de formation qu’il lui reste ainsi que du catalogue des formations. Il peut proposer sa
+participation a une formation.<br>
+      ->Le validateur pourra utiliser ce module comme un salarie (c’est son superieur hierar-
+chique qui validera sa formation) et de plus il pourra voir les formations suivies,a suivre
+et proposees par les salaries dont il a la charge. Il doit neanmoins respecter un montant
+annuel maximum pour ses employe et sera donc amene a refuser des formations trop
+cheres.<br>
+->Une formation est la donne de : un contenu, une date, un cout, une duree et despre-requis .
+</p>
                   </div>
                 </div>
               </div>
@@ -89,13 +91,15 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">Gestion des recrutements</div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    <p class="text-primary">
+
+                    Ce module contient : une liste des postes ou-
+verts au recrutement dans l’entreprise ; pour chaque poste, une description et un espace
+ou le candidat peut deposer son dossier ;<br> 
+->le gestionnaire (il y en aura un par poste)
+pourra voir tous les candidats, les dossiers partiels et devra pouvoir interagir avec les
+candidats (les refuser, les inviter a un entretient).<br>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -108,13 +112,15 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">Forum</div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                     <p class="text-primary">
+
+                     Un forum ou les utilisateurs pourront echanger dans des conver-
+sations regroupee par theme. Vous pouvez faire une gestion de droit restreignant la
+possibilite d'ecriture et de lecture de certains themes a certains utilisateurs.
+N’oubliez pas les moderateurs. <br>Vous pouvez aussi prolonger ce forum avec une partie
+disponible a des personnes externes a l’entreprise.
+
+                     </p>
                   </div>
                 </div>
               </div>
@@ -122,38 +128,38 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">Generation de statistiques </div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                   
+ <p class="text-primary">
+              Ce module contient une interface permettant de generer des statistiques sur la base de donnee.
+              Les statistiques sont : <br>
+              ->Le proportion femme/homme <br>
+              ->Le taux de personnel handicape<br>
+              ->L’evolution des effectifs au cours de l’annee .
+              <br>
+                   </p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="panel panel-default">
-                  <div class="panel-heading">Generateur de fiche de paie</div>
+                  <div class="panel-heading">Annuaire</div>
                   <div class="panel-body">
-                    <h2>Emphasis classes</h2>
-                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                     <p class="text-primary">
+                     Un annuaire permettant d’obtenir les informations de contact d’un employe
+present sur la base de donnes. <br>Il devra bien sur proposer de l’autocompletion et corriger
+les erreurs de frappe.
+                     </p>
                   </div>
                 </div>
               </div>
 
-            </div>            
+            </div>
 
-            
+
 
           </div>
         </div>
-        
+
         <div class="row">
           <div class="clearfix pt pb">
             <div class="col-md-12">

@@ -1,0 +1,169 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="brand clearfix">
+    <a href="/{{nom}}" class="logo"><img src="bundles/bootstrap/img/logo.jpg" class="img-responsive" alt=""></a>
+    <span class="menu-btn"><i class="fa fa-bars"></i></span>
+    <ul class="ts-profile-nav">
+      <li class="ts-account">
+        <a href="#"><img src="bundles/bootstrap/img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> {{nom}} <i class="fa fa-angle-down hidden-side"></i></a>
+        <ul>
+          <li><a href="#">Mon compte</a></li>
+          <li><a href="#">Modifie</a></li>
+          <li><a href="#">Sortir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="ts-main-content">
+  <nav class="ts-sidebar">
+    <ul class="ts-sidebar-menu">
+      <li class="ts-label">Acceuil</li>
+      <li><a href="{{"/1"}}"><i class="fa fa-dashboard"></i> Description de l'entreprise</a></li>
+      <li class="open"><a href="{{"/"}}"><i class="fa fa-desktop"></i> Modules disponibles</a>
+        <ul>
+          <li class="open"><a href="{{"/2"}}">Gestion des gongés</a></li>
+          <li><a href="{{"/3"}}">Gestion des formations</a></li>
+          <li><a href="{{"/4"}}">Gestion des recrutements</a></li>
+          <li><a href="{{"/5"}}">Forum de discussions interne</a></li>
+          <li><a href="{{"/6"}}">Génération de statistiques</a></li>
+          <li><a href="{{"/7"}}">Annuaire</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+ <div class="content-wrapper">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2 class="page-title">Gestion des recrutements</h2>
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h3>Les Offres disponibles</h3>
+                  
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Titre</th>
+                            <th>
+                               Durée 
+                            
+                            </th>
+                            <th>
+                               Lieu 
+                              
+                            </th>
+                            <th>
+                               Discription
+                              
+                            </th>
+                            <th>
+                               Statut
+                              
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Outils de Développement Web</th>
+                            <td>une semaine(7jours)</td>
+                            <td>Paris</td>
+                            <td> framework symfony3 et node.js</td>
+                            <td>  <a href="#" class="btn btn-primary btn-xs">valide</a></td>
+                          </tr>
+                          <tr>
+                            <th>Outils de Développement Web</th>
+                            <td>une semaine(7jours)</td>
+                            <td>Paris</td>
+                            <td> framework symfony3 et node.js</td>
+                            <td>  <a href="#" class="btn btn-primary btn-xs">valide</a></td>
+                          </tr>
+                          <tr>
+                            <th>Outils de Développement Web</th>
+                            <td>une semaine(7jours)</td>
+                            <td>Paris</td>
+                            <td> framework symfony3 et node.js</td>
+                            <td>  <a href="#" class="btn btn-primary btn-xs">valide</a></td>
+                          </tr>
+                          <tr>
+                            <th>Outils de Développement Web</th>
+                            <td>une semaine(7jours)</td>
+                            <td>Paris</td>
+                            <td> framework symfony3 et node.js</td>
+                            <td>  <a href="#" class="btn btn-primary btn-xs">valide</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+       
+            </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">Ajouter une nouvelle offre</div>
+              <div class="panel-body">
+                <form method="get" class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Titre de l'offre</label>
+                    <div class="col-sm-10">
+                      <input type="text" placeholder="titre ...." class="form-control input-sm">
+                    </div>
+                  </div>
+          <div class="panel-body">
+                <form method="get" class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Lieu de l'offre</label>
+                    <div class="col-sm-10">
+                      <input type="text" placeholder="Paris" class="form-control input-sm">
+                    </div>
+                  </div>
+                  
+                  
+                
+                  
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">La description de l'offre</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="hr-dashed"></div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Type du contrat</label>
+                    <div class="col-sm-10">
+                      <select class="form-control">
+                        <option>CDD</option>
+                        <option>CDI</option>
+                        <option>Apprentissage</option>
+                        <option>Stage</option>
+                      </select>
+                    </div>
+                  </div>
+                
+                  <div class="hr-dashed"></div>
+                  <div class="form-group">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <button class="btn btn-default" type="submit">Cancel</button>
+                      <button class="btn btn-primary" type="submit">Save</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="brand clearfix">
+    <a href="/{{nom}}" class="logo"><img src="bundles/bootstrap/img/logo.jpg" class="img-responsive" alt=""></a>
+    <span class="menu-btn"><i class="fa fa-bars"></i></span>
+    <ul class="ts-profile-nav">
+      <li class="ts-account">
+        <a href="#"><img src="bundles/bootstrap/img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> {{nom}} <i class="fa fa-angle-down hidden-side"></i></a>
+        <ul>
+          <li><a href="#">Mon compte</a></li>
+          <li><a href="#">Modifie</a></li>
+          <li><a href="#">Sortir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="ts-main-content">
+  <nav class="ts-sidebar">
+    <ul class="ts-sidebar-menu">
+      <li class="ts-label">Acceuil</li>
+      <li><a href="{{"/1"}}"><i class="fa fa-dashboard"></i> Description de l'entreprise</a></li>
+      <li class="open"><a href="{{"/"}}"><i class="fa fa-desktop"></i> Modules disponibles</a>
+        <ul>
+          <li class="open"><a href="{{"/2"}}">Gestion des gongés</a></li>
+          <li><a href="{{"/3"}}">Gestion des formations</a></li>
+          <li><a href="{{"/4"}}">Gestion des recrutements</a></li>
+          <li><a href="{{"/5"}}">Forum de discussions interne</a></li>
+          <li><a href="{{"/6"}}">Génération de statistiques</a></li>
+          <li><a href="{{"/7"}}">Annuaire</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+<div class="content-wrapper">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <h2 class="page-title">Gestion des gongés</h2>
+
+
+            
+          <div class="panel panel-default">
+              <div class="panel-heading">Faire une demande :</div>
+              <div class="panel-body">
+                <form method="get" class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Nom </label>
+                    <div class="col-sm-10">
+                      <input type="text" placeholder="Ruel..." class="form-control input-sm">
+                    </div>
+                  </div>
+          <div class="panel-body">
+                <form method="get" class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Post :</label>
+                    <div class="col-sm-10">
+                      <input type="text" placeholder="cassier ..." class="form-control input-sm">
+                    </div>
+                  </div>
+                 
+                  
+                
+                  
+                  
+                  <div class="hr-dashed"></div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">La durée du gongé</label>
+                    <div class="col-sm-10">
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                    </div>
+                  </div>
+                
+                  <div class="hr-dashed"></div>
+                  <div class="form-group">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <button class="btn btn-default" type="submit">Cancel</button>
+                      <button class="btn btn-primary" type="submit">OK</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+{% endblock %}
